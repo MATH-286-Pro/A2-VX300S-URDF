@@ -1,14 +1,19 @@
 <robot name="a2">
 
   <!-- [CAUTION] uncomment when convert to mujoco -->
-  <!-- <mujoco>
+  <mujoco>
     <compiler meshdir="meshes" discardvisual="false" />
+    <worldbody>
+      <geom name="floor" type="plane" size="5 5 0.1" pos="0 0 0"
+            rgba="0.85 0.85 0.85 1"
+            friction="1.0 0.1 0.1"/>
+    </worldbody>
   </mujoco>
   <link name="world"></link>
   <joint name="floating_base_joint" type="floating">
     <parent link="world" />
     <child link="base_link" />
-  </joint> -->
+  </joint>
 
   <link
     name="base_link">
