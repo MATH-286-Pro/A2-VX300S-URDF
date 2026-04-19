@@ -1063,7 +1063,7 @@
   <joint name="arm_mount_joint" type="fixed">
     <parent link="base_link"/>
     <child link="vx300s/base_link"/>
-    <origin xyz="0.20 0 0.16" rpy="0 0 0"/>
+    <origin xyz="0.08 0 0.16" rpy="0 0 0"/>
   </joint>
 
   <material name="interbotix_black">
