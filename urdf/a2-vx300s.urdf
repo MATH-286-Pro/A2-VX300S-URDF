@@ -1400,8 +1400,8 @@
   </link>
   <joint name="left_finger" type="prismatic">
     <axis xyz="0 1 0"/>
-    <limit effort="5" lower="0.021" upper="0.057" velocity="1"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <limit effort="5" lower="0" upper="0.036" velocity="1"/>
+    <origin rpy="0 0 0" xyz="0 0.021 0"/>
     <parent link="vx300s/fingers_link"/>
     <child link="vx300s/left_finger_link"/>
     <dynamics friction="0.1"/>
@@ -1437,8 +1437,8 @@
   </link>
   <joint name="right_finger" type="prismatic">
     <axis xyz="0 1 0"/>
-    <limit effort="5" lower="-0.057" upper="-0.021" velocity="1"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <limit effort="5" lower="-0.036" upper="0" velocity="1"/>
+    <origin rpy="0 0 0" xyz="0 -0.021 0"/>
     <parent link="vx300s/fingers_link"/>
     <child link="vx300s/right_finger_link"/>
     <dynamics friction="0.1"/>
